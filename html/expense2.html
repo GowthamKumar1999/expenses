@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/expense2.css">
+</head>
+<body>
+    <button onclick="logout()">Logout</button>
+    <h2>Expenses</h2>
+    <div id="root"></div>
+
+    <div class="container-fluid">
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Get Data</button>
+    </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">expense details</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form action="" id="modal11">
+                    <div>
+                        <input type="text" name="name" placeholder="Name" >
+                    </div>
+                    <div>
+                        <input type="text" name="description" placeholder="Desc" >
+                    </div>
+                    <div>
+                        <input type="text" name="amount" placeholder="Amount" >
+                    </div>
+                    <div>
+                        <input type="text" name="transactionDetails" placeholder="Transaction Details" >
+                    </div>
+                    <div>
+                        <input type="text" name="transactionAccount"  placeholder="Transaction Account">
+                    </div>
+                    <div>
+                        <input type="text" name="type"  placeholder="type">
+                    </div>
+                    <button type="submit">Get Data</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="updateExp" tabindex="-1" role="dialog" aria-labelledby="exampleModal2" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Update Expense details</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form  id="modal12">
+                    <div>
+                        <input type="text" name="name" placeholder="Name" >
+                    </div>
+                    <div>
+                        <input type="text" name="description" placeholder="Desc" >
+                    </div>
+                    <div>
+                        <input type="text" name="amount" placeholder="Amount" >
+                    </div>
+                    <div>
+                        <input type="text" name="transactionDetails" placeholder="Transaction Details" >
+                    </div>
+                    <div>
+                        <input type="text" name="transactionAccount"  placeholder="Transaction Account">
+                    </div>
+                    <div>
+                        <input type="text" name="type"  placeholder="type">
+                    </div>
+                    <button type="submit">update Data</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+<!-- 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="../js/expense2.js"></script>
+</html>
